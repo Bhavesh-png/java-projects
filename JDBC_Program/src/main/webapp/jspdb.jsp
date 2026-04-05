@@ -19,16 +19,16 @@
                 Connection c = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/studentdb",
                         "root",
-                        "password"
+                        ""
                 );
                 Statement st = c.createStatement();
                 String btn = request.getParameter("b");
                 if (btn.equals("update")) {
-                    i = st.executeUpdate("update stud set name='" + name + "'whererno=" + a + "");
+                    i = st.executeUpdate("update stud set name='" + name + "' where rno=" + a + "");
                     out.println("record update");
                 }
                 if (btn.equals("delete")) {
-                    i = st.executeUpdate("delete * from stud where rno=" + a + "");
+                    i = st.executeUpdate("delete from stud where rno=" + a + "");
                     out.println("record delete");
                 }
                 if (btn.equals("insert")) {
