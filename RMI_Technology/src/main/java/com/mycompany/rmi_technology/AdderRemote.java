@@ -9,7 +9,6 @@ public class AdderRemote extends UnicastRemoteObject implements Adder {
         super();
     }
 
-    @Override
     public int add(int x, int y) throws RemoteException {
         return x + y;
     }

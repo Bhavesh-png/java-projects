@@ -1,16 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.rmi_technology;
 
-/**
- *
- * @author bhave
- */
-public class Adder {
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+public interface Adder extends Remote {
+    int add(int a, int b) throws RemoteException;
 }

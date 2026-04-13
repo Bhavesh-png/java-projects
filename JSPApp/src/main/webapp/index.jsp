@@ -1,13 +1,36 @@
-<html>
-<head>
-    <title>JSP</title>
-</head>
-<body>
-    <h2>JSP</h2>
+public class StudentBean {
 
-    <form action="result.jsp">
-        Enter Name: <input type="text" name="name"><br>
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+// Private variables
+private int id;
+private String name;
+private int age;
+
+// Default constructor
+public StudentBean() {}
+
+// Getter and Setter methods
+
+public void setId(int id) {
+this.id = id;
+}
+
+public int getId() {
+return id;
+}
+
+public void setName(String name) {
+this.name = name;
+}
+
+public String getName() {
+return name;
+}
+
+public void setAge(int age) {
+this.age = age;
+}
+
+public int getAge() {
+return age;
+}
+}
